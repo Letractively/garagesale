@@ -1,0 +1,623 @@
+body {
+	color: black;
+	margin: 0;
+	background: #f2ffc2;
+	font: small sans-serif;
+}
+
+#externa {
+	margin: 0 3em 0 3em;
+}
+
+a {
+	color: #298585;
+}
+
+.special_link {
+	text-decoration: none;
+	padding: .2em 1.5em .2em 1em;
+	border: solid 1px #CCC;
+	background: #EEE;
+}
+
+.special_link:HOVER {
+	background: #f8f4f7;
+}
+
+.titulo_pagina {
+	font-size: 20px;
+	margin: .5em 0 .5em 0;
+	}
+
+/*
+-----------------------------------
+ main 
+----------------------------------- 
+*/
+#content-main {
+	margin: 7.1em 0 0 17em;
+	padding: 2em 3em 1em 2em;
+	position: relative;
+	z-index: 2;
+	background: white;
+	color: black;
+	border: 1px solid #aaa;
+	line-height: 1.5em;
+	min-height: 35em;
+}
+
+/*
+-----------------------------------
+ Menus laterais  
+----------------------------------- 
+*/
+#menus-laterais {
+	margin: 2em 0 0 0;
+	float: left;
+}
+
+/*
+Botao pesquisar cidade
+*/
+#pesquisarCidade {
+	padding: .3em .5em .3em .5em;
+}
+
+.botao {
+	border: 1px solid #226622;
+	padding: .5em 1em .5em 1em;
+	font-size: 11px;
+	margin: 0;
+	cursor: pointer;
+}
+
+#botao-adicionar {
+	border: 1px solid #226622;
+	padding: .2em 1em .2em 1em;
+	background-color: #eee;
+	text-decoration: none;
+	color: #572;
+	text-decoration: none;
+	background-color: #eee;
+}
+
+#opcoes-do-produto {
+	padding-left: 0;
+}
+
+#opcoes-do-produto li {
+	display: inline;
+	padding: .5em;
+	margin-left: 0;
+}
+
+/*-----------------------------------
+ Avisos/ Mensagens/ Warnings 
+----------------------------------- */
+.information,.warning,.error {
+	display: block;
+	padding: .5em 1em .5em 1em;
+	width: 70%;
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-topright: 4px;
+	-moz-border-radius-bottomleft: 4px;
+	-moz-border-radius-bottomright: 4px;
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.information {
+	background: #7E7;
+	border: 1px solid #292;
+}
+
+.warning {
+	background: #EE5;
+	border: 1px solid #992;
+}
+
+.warning img,.information img,.error img {
+	padding: 0 1em 0 0;
+}
+
+.error {
+	background: #E55;
+	border: 1px solid #921;
+}
+
+.icon {
+	background: white url('../images/close.png') right center no-repeat;
+}
+
+/*-----------------------------------
+ inputs 
+----------------------------------- */
+input,textarea {
+	border: 1px solid #226622;
+	font-size: 11px;
+	padding: 3px;
+	margin: 0;
+}
+
+/*-----------------------------------
+ Mapa 
+----------------------------------- */
+#map {
+	height: 300px;
+	width: 430px;
+	border-style: solid;
+	border-width: 1px;
+}
+
+#div_searchplace {
+	border: solid 1px #cdc;
+	padding: .5em;
+	width: 440px;
+}
+
+#fotosProduto {
+	border: solid 1px #cdc;
+	padding: .5em;
+}
+
+/*
+-----------------------------------
+** general portlet styles (elements in the quickbar)
+  ( para todos portlets externos ao main exeto footer )
+  classe dos portlets
+-----------------------------------
+*/
+.pBody {
+	font-size: 95%;
+	background-color: white;
+	color: black;
+	border-collapse: collapse;
+	border: 1px solid #aaa;
+	padding: 1em 0.5em .5em 0em;
+}
+
+.pBody img {
+	border: 0px;
+	margin-right: .6em;
+}
+
+.portlet {
+	border: none;
+	padding-top: 1em;
+	float: none;
+	width: 15.6em;
+	overflow: hidden;
+	float: none;
+}
+
+/* Para listas */
+.portlet ul {
+	line-height: 1.5em;
+	list-style-type: none;
+	left: 0;
+	right: 0;
+}
+
+.portlet li {
+	
+}
+
+.portlet a {
+	text-decoration: none;
+	color: #572;
+}
+
+/*
+-----------------------------------
+ ( menu superior (usuário) ) the personal toolbar 
+-----------------------------------
+*/
+#menu-usuario-pesquisa {
+	font-size: 115%;
+	padding-top: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 0;
+	width: 100%;
+	white-space: nowrap;
+	margin: 0;
+	background: #459e00;
+	position: absolute;
+}
+
+#menu-usuario-pesquisa .portlet {
+	padding: 0em 1em 0em 0em;
+	border: none;
+	background: #459e00;
+}
+
+/* this is the ul contained in the portlet */
+#menu-usuario-pesquisa ul {
+	padding: 1em 3em 0.2em 0;
+	margin: 0;
+	text-align: right;
+}
+
+.menuPessoal {
+	display: inline;
+	margin: 0 .5em 0 .5em;
+	padding: 0.8em 0 2em 0;
+	text-decoration: none;
+}
+
+.menuPessoal a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #FFFFFF;
+	font-size: xx-small;
+	padding: .9em 1em 2em 1em;
+}
+
+.menuPessoal a:hover {
+	background-color: #cDa;
+	padding: .9em 1em 2em 1em;
+	text-decoration: none;
+	color: #474;
+}
+
+/*
+-----------------------------------
+  Titulo properties
+-----------------------------------
+*/
+#p-titulo {
+	left: 10em;
+	border: 1px solid #257e00;
+	position: absolute;
+	top: 0;
+	margin-top: 6;
+	z-index: 3;
+	background: #458700;
+	padding: 0;
+	text-shadow: -1px -1px 4px #333333;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	font-size: large;
+	text-align: center;
+	padding: 0;
+	text-decoration: none;
+}
+
+#p-titulo label {
+	padding: .2em 1em 0 .4em;
+	float: right;
+	cursor: pointer;
+}
+
+#p-titulo img {
+	margin: 1 1 1 10;
+	width: 29px;
+}
+
+#p-titulo:HOVER {
+	background: #459000;
+}
+
+/*
+-----------------------------------
+  Search portlet
+-----------------------------------
+*/
+#pesquisa {
+	text-align: center;
+	border: 1px solid #257e00;
+	position: absolute;
+	top: 0;
+	margin-top: 6;
+	z-index: 3;
+	left: 13em;
+	background: #458700;
+	padding: 0.3em 0em .5em 0em;
+	width: 13em;
+	left: 32em;
+	padding: 0.3em 1em .5em 1em;
+}
+
+#p-search {
+	position: absolute;
+	top: 0;
+}
+
+input.searchButton {
+	border: 1px solid #226622;
+	font-size: 10px;
+	padding: 3px;
+	margin: 0;
+}
+
+#searchInput {
+	border: 1px solid #226622;
+	font-size: 11px;
+	padding: 3px;
+	width: 17em;
+	margin: 0;
+}
+
+#p-search .pBody {
+	padding: .5em .4em .4em .4em;
+	text-align: center;
+}
+
+#p-search #searchform div div {
+	margin-top: .4em;
+	font-size: 95%;
+}
+
+#p-search {
+	position: absolute;
+	top: 1.2em;
+	left: 15.5em;
+	margin: 0 0 2 0;
+	white-space: nowrap;
+	width: 76%;
+	line-height: 1.1em;
+	overflow: visible;
+	background: none;
+	border-collapse: collapse;
+	padding-left: 1em;
+	list-style: none;
+	font-size: 95%;
+}
+
+#p-search .pBody {
+	padding: .5em .4em .4em .4em;
+	text-align: center;
+	margin: 0 0 0 0;
+}
+
+/*
+-----------------------------------
+  Logo properties
+-----------------------------------
+*/
+#p-logo {
+	height: 90px;
+	z-index: 3;
+	overflow: visible;
+	z-index: 3;
+}
+
+#p-logo h5 {
+	display: none;
+}
+
+#p-logo a,#p-logo a:hover {
+	display: block;
+	height: 155px;
+	width: 12.2em;
+	background-repeat: no-repeat;
+	background-position: 35% 50% !important;
+	text-decoration: none;
+}
+
+/*
+-----------------------------------
+navegacao principal  & tools
+-----------------------------------
+*/
+#p-navigation,#p-tb {
+	z-index: 3;
+	position: relative;
+}
+
+/* títulos sobre os menus principal ferramentas e search*/
+#p-navigation h5,#p-tb h5 {
+	background: #ecfab9;
+	margin-left: 0.6em;
+	border: 1px solid #aabbaa;
+	padding: .3em 1.5em .3em 1em;
+	display: inline;
+	height: 1em;
+}
+
+#p-navigation ul,#p-tb ul {
+	padding-left: .6em;
+	margin: .5em 0 .5em 0;
+}
+
+#p-navigation li,#p-tb li {
+	padding: .5em .4em .5em .3em;
+	text-decoration: none;
+}
+
+#p-navigation a,#p-tb a {
+	padding: 0.7em .7em 0.7em .5em;
+}
+
+#p-navigation a:HOVER,#p-tb a:HOVER {
+	background: #f3f3ff;
+}
+
+#p-navigation img {
+	
+}
+
+/*
+-----------------------------------
+  footer
+-----------------------------------
+*/
+#footer {
+	border-top: solid 1px #c2c2c2;
+	background: #f8f8f6;
+	min-height: 200px;
+	padding-bottom: 10px;
+	min-width: 100%;
+	float: left;
+	margin-top: 1em;
+}
+
+#footer ul {
+	text-align: center;
+	padding-right: 2em;
+}
+
+#footer li {
+	display: inline;
+	margin: 0 1.3em;
+}
+
+/*
+----------------------------------------------------------
+  especificos
+----------------------------------------------------------
+*/ /*
+-----------------------------------
+  listProdutos
+-----------------------------------
+*/
+#listProdutos {
+	padding: 0;
+}
+
+#listProdutos li {
+	border: 1px solid #EEE;
+	margin: 1em 0 1em 0;
+	padding: .5em 1em .5em 1em;
+	list-style-type: none;
+}
+
+/*autocomplete do ui*/
+.ui-autocomplete-loading {
+	background: white url('../images/spinner.gif') right center no-repeat;
+}
+
+#verLocalizacao {
+	vertical-align: middle;
+}
+
+#divToMap {
+	margin: .5em 0 1em 0;
+}
+
+/*
+MENSAGENS
+*/
+#topicos ul {
+	list-style-type: none;
+}
+
+#mensagens {
+	border: 1px solid #BBB;
+	padding: .5em;
+	margin: 2em 0 1em 0;
+}
+
+.form_nova_mensagem {
+	margin-bottom: 0;
+	vertical-align: middle;
+}
+
+.texto-mensagem {
+	margin: 0;
+}
+
+.botao_novo_comentario {
+	margin-top: .5em;
+	border: 1px solid #226622;
+	padding: .1em 1em .1em 1em;
+	font-size: 11px;
+	margin: 0;
+}
+
+.posts {
+	border: 1px solid #BBB;
+	padding: .5em;
+	margin: 2em 2em 1em 1em;
+}
+
+.link-post {
+	text-decoration: none;
+}
+
+.lb_resumo_mensagem {
+	font-size: 12px;
+}
+
+.lb_nome_user {
+	font-size: 10px;
+	color: gray;
+}
+
+.lb_data {
+	font-size: 9px;
+	color: #AAA;
+}
+
+.link_usuario_coment {
+	font-size: 11px;
+	color: #88e;
+	text-decoration: none;
+}
+
+.mensagem_post {
+	margin: .3em 2em .6em 1em;
+}
+
+.lista-posts {
+	padding: .5em 1em .5em 1em;
+}
+
+.lista-posts li {
+	margin: .2em 1em 2em 1em;
+}
+
+/*
+Paginacao
+*/
+#produtosPagination li {
+	border: solid 1px #AAA;
+	display: inline;
+	padding: .5em;
+	margin: 2px;
+	background: #EEF;
+}
+
+#paginaAtual {
+	font-size: 140%;
+}
+
+#titulo_perfil {
+	font-size: 20px;
+}
+
+#link_to_user_produtos,#link_to_user_mensagens {
+	font-size: 16px;
+	text-decoration: none;
+	margin: .5em;
+	text-decoration: none;
+}
+
+.titulo_lista_produto {
+	text-decoration: none;
+	padding: 0 1em 0 1em;
+	font-size: 16px;
+	margin-left: 1em;
+	border: solid 1px gray;
+	border-bottom: solid 0px;
+}
+
+.tabela_produto_lista tr td {
+	border: solid 1px #eee;
+	margin: 0;
+	padding: .3em;
+}
+
+.tabela_produto_lista {
+	font-size: 14px;
+    padding: .5em;
+	border: solid 1px #aaa;
+}
