@@ -1,0 +1,70 @@
+#topnav {
+  font-size: 11px;
+  line-height: 23px;
+  padding: 10px 0 12px;
+  text-align: right;
+  color:#232;
+}
+
+#signin_menu {
+	background-color: #cDa;
+	border: 1px none transparent;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 5px;
+	color: #687;
+	font-size: 11px;
+	margin-right: 4.6em;
+	margin-top: 13px;
+	padding: 1.5em;
+	position: absolute;
+	right: 0;
+	text-align: left;
+	top: 24.5px;
+	width: 210px;
+	z-index: 100;
+	display: none;
+}
+
+#signin_menu a {
+	color: green;
+	text-decoration: none;
+}
+
+a.signin span {
+	background-image: url("../images/toggle_down_light.png");
+	background-position: 100% 50%;
+	background-repeat: no-repeat;
+	padding: 4px 16px 6px 0;
+}
+
+a.signin {
+}
+
+#signin a:hover {
+}
+
+a.signin.menu-open span {
+	background-image: url("../images/toggle_up_dark.png");
+	color: #555;
+}
+
+#signin_submit {
+	-moz-border-radius: 0px;
+	background: #4b2 scroll 0 0;
+	border: 1px solid #2a2;
+	color: #fff;
+	//text-shadow: 0 -1px 0 #070;
+	padding: 4px 10px 5px;
+	font-size: 11px;
+	margin: 1em 2em 0 0;
+	font-weight: bold;
+}
+
+#signin_menu input[type="text"],#signin_menu input[type="password"] {
+	border: 1px solid #262;
+	font-size: 12px;
+	margin: 3px 0 5px;
+	padding: 5px;
+	width: 203px;
+}
